@@ -10,7 +10,7 @@ namespace DotNetCoreSendEmail
         {
             SmtpClient client = new SmtpClient("smtp.163.com");
             client.UseDefaultCredentials = false;
-            client.Credentials = new NetworkCredential("bidianqing123", "your password");
+            client.Credentials = new NetworkCredential("bidianqing123", "password");
 
             MailMessage mailMessage = new MailMessage();
             mailMessage.From = new MailAddress("bidianqing123@163.com");
