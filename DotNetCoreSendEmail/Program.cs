@@ -13,7 +13,7 @@ namespace DotNetCoreSendEmail
             /*
             SmtpClient client = new SmtpClient("smtp.163.com");
             client.UseDefaultCredentials = false;
-            client.Credentials = new NetworkCredential("bidianqing123", "19910916bdq");
+            client.Credentials = new NetworkCredential("bidianqing123", "****");
 
             MailMessage mailMessage = new MailMessage();
             mailMessage.From = new MailAddress("bidianqing123@163.com");
@@ -41,7 +41,7 @@ namespace DotNetCoreSendEmail
                 client.Connect("smtp.163.com", 25, false);
 
                 // Note: only needed if the SMTP server requires authentication
-                client.Authenticate("bidianqing123", "19910916bdq");
+                client.Authenticate("bidianqing123", "****");
 
                 client.Send(message);
                 client.Disconnect(true);
